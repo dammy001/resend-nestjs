@@ -1,17 +1,18 @@
 {
-  "name": "nest-package-template",
-  "version": "1.0.0",
+  "name": "resend-nestjs",
+  "version": "0.0.1",
   "description": "NestJS Package Template",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "private": false,
-  "packageManager": "pnpm@7.27.0",
+  "packageManager": "pnpm@8.6.2",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "typecheck:why": "tsc --noEmit --explainFiles > explainTypes.txt",
     "build": "pnpm typecheck && tsup src/index.ts --format cjs,esm --dts --clean",
     "watch": "pnpm run build -- --watch src",
+    "lint": "eslint --cache . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -28,21 +29,26 @@
   "author": "Damilare Anjorin",
   "license": "MIT",
   "peerDependencies": {
-    "@nestjs/common": "^8.0.0 || ^9.0.0"
+    "@nestjs/common": "^9 || ^10",
+    "@nestjs/core": "^9 || ^10"
   },
   "devDependencies": {
     "@damilaredev/eslint-config-typescript": "^0.0.18",
-    "@nestjs/common": "^9.2.1",
-    "@nestjs/core": "^9.2.1",
-    "@nestjs/testing": "^9.2.1",
-    "@types/jest": "^29.2.4",
-    "@types/node": "^18.11.17",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.30.0",
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/testing": "^10.0.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.1",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.42.0",
     "husky": "^8.0.2",
+    "prettier": "^2.8.8",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
-    "tsup": "^6.5.0",
-    "typescript": "^4.9.4"
+    "tsup": "^7.0.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "resend": "^0.15.3"
   }
 }

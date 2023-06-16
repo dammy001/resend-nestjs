@@ -1,8 +1,8 @@
-// eslint-disable-next-line eslint-comments/disable-enable-pair
-/* eslint-disable quotes */
 {
   "extends": "@damilaredev/eslint-config-typescript",
   "rules": {
-    "semi": "off"
+    "semi": "off",
+    "@typescript-eslint/indent": "off",
+    "space-before-function-paren": "off"
   }
 }
