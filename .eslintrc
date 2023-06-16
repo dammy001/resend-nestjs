@@ -1,0 +1,8 @@
+// eslint-disable-next-line eslint-comments/disable-enable-pair
+/* eslint-disable quotes */
+{
+  "extends": "@damilaredev/eslint-config-typescript",
+  "rules": {
+    "semi": "off"
+  }
+}
