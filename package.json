@@ -10,8 +10,9 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "typecheck:why": "tsc --noEmit --explainFiles > explainTypes.txt",
-    "build": "pnpm typecheck && tsup src/index.ts --format cjs,esm --dts --clean",
+    "build": "pnpm typecheck && tsup src/index.ts --format cjs,esm --dts --clean --external @nestjs/common --external @nestjs/core",
     "watch": "pnpm run build -- --watch src",
+    "dev": "pnpm -r --filter='./example/**' run start:dev",
     "lint": "eslint --cache . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

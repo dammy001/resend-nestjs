@@ -21,6 +21,7 @@ export class ResendModule {
           useValue: options || {},
         },
       ],
+      exports: [ResendService],
     }
   }
 
@@ -38,6 +39,7 @@ export class ResendModule {
         ResendService,
         ResendModule.createResendModuleProvider(options),
       ],
+      exports: [ResendService],
     }
   }
 
