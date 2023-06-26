@@ -50,6 +50,6 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "resend": "^0.15.3"
+    "resend": "^0.16.0"
   }
 }
