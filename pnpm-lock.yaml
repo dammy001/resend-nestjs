@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       resend:
-        specifier: ^0.15.3
-        version: 0.15.3
+        specifier: ^0.16.0
+        version: 0.16.0
     devDependencies:
       '@damilaredev/eslint-config-typescript':
         specifier: ^0.0.18
@@ -5807,8 +5807,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /resend@0.15.3:
-    resolution: {integrity: sha512-dzXHBaOjOS3ufBGjqiJjMe7LnproEn/jiAyBjg6IBtp56MCfih0O4IS4JeBcfj3y2Afm+tZITfoZAylKWLEJOg==}
+  /resend@0.16.0:
+    resolution: {integrity: sha512-6NnrtEapGD6FtnhRUrtDdfgQFH2av5cTkrnElUh6AjTzGrHXiMpD/GRwT46pqpA6i/AXSDXKV7Wh/hHQJLKFew==}
     dependencies:
       '@react-email/render': 0.0.7
       axios: 1.4.0
