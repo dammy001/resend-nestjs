@@ -34,7 +34,7 @@
     "@nestjs/core": "^9 || ^10"
   },
   "devDependencies": {
-    "@damilaredev/eslint-config-typescript": "^0.0.18",
+    "@damilaredev/eslint-config-typescript": "^0.0.19",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
